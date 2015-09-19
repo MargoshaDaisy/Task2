@@ -7,11 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KLTree.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        srand((time(NULL)));
+        KLTree *tree = [[KLTree alloc] initWithSort:@"Antonovka"];
+        [tree showFullInformationAboutTree];
+        [tree grow];
+        [tree showFullInformationAboutTree];
+        [tree shake];
+        [tree showFullInformationAboutTree];
+        [tree grow];
+        [tree showFullInformationAboutTree];
+        [tree release];      
+        
     }
     return 0;
 }

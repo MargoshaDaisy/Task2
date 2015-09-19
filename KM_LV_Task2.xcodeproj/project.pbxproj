@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D02D2FE61BA417DA00D55F68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D2FE51BA417DA00D55F68 /* main.m */; };
+		D02D2FF11BA4197D00D55F68 /* KLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D2FF01BA4197D00D55F68 /* KLTree.m */; };
+		D02D94161BA6FC8100DBF8E4 /* KLApple.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D94151BA6FC8100DBF8E4 /* KLApple.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		D02D2FE21BA417DA00D55F68 /* KM_LV_Task2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KM_LV_Task2; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02D2FE51BA417DA00D55F68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D02D2FEF1BA4197D00D55F68 /* KLTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTree.h; sourceTree = "<group>"; };
+		D02D2FF01BA4197D00D55F68 /* KLTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTree.m; sourceTree = "<group>"; };
+		D02D94151BA6FC8100DBF8E4 /* KLApple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLApple.m; sourceTree = "<group>"; };
+		D02D94171BA6FC8F00DBF8E4 /* KLApple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLApple.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		D02D2FE41BA417DA00D55F68 /* KM_LV_Task2 */ = {
 			isa = PBXGroup;
 			children = (
+				D02D94171BA6FC8F00DBF8E4 /* KLApple.h */,
+				D02D94151BA6FC8100DBF8E4 /* KLApple.m */,
 				D02D2FE51BA417DA00D55F68 /* main.m */,
+				D02D2FEF1BA4197D00D55F68 /* KLTree.h */,
+				D02D2FF01BA4197D00D55F68 /* KLTree.m */,
 			);
 			path = KM_LV_Task2;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02D2FE61BA417DA00D55F68 /* main.m in Sources */,
+				D02D94161BA6FC8100DBF8E4 /* KLApple.m in Sources */,
+				D02D2FF11BA4197D00D55F68 /* KLTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +214,7 @@
 		D02D2FEA1BA417DA00D55F68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +222,7 @@
 		D02D2FEB1BA417DA00D55F68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +246,7 @@
 				D02D2FEB1BA417DA00D55F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
